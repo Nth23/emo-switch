@@ -131,6 +131,7 @@ li a:focus::before {
   li a:hover::before,
   li a:focus::before {
     top: 0px; /* Adjust position for smaller screens */
+    left: 18px;
     font-size: 2rem; /* Adjust font size for smaller screens */
   }
 }
