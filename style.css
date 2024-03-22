@@ -104,12 +104,10 @@ li a:focus::before {
   font-size: 3rem; /*Change emoji content on hover/focus */
 }
 
-
-
 @media (max-width: 768px) {
   /* Adjust styles for smaller screens */
   body {
-    font-size: 1.2rem; /* Decrease font size for smaller screens */
+    font-size: 1.5rem; /* Decrease font size for smaller screens */
   }
   
   nav {
@@ -122,25 +120,19 @@ li a:focus::before {
     font-size: 1.8rem; /* Decrease font size for smaller screens */
   }
 
-  li a::after {
-    left: -15px; /* Adjust position for smaller screens */
-  }
-
   li a::before {
     top: 40px; /* Adjust position for smaller screens */
-    left: 20px; /* Adjust position for smaller screens */
   }
 
   li a:hover::after,
   li a:focus::after {
     top: -50px; /* Adjust position for smaller screens */
-    left: -20px; /* Adjust position for smaller screens */
   }
 
   li a:hover::before,
   li a:focus::before {
     top: 0px; /* Adjust position for smaller screens */
     font-size: 2rem; /* Adjust font size for smaller screens */
-/*     left: 18px; */
   }
 }
+
