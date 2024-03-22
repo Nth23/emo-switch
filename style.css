@@ -109,7 +109,7 @@ li a:focus::before {
 @media (max-width: 768px) {
   /* Adjust styles for smaller screens */
   body {
-    font-size: 1.5rem; /* Decrease font size for smaller screens */
+    font-size: 1.2rem; /* Decrease font size for smaller screens */
   }
   
   nav {
