@@ -1,3 +1,111 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Media query for Android devices */
+@media only screen and (max-width: 767px) {
+  /* Adjust styles for Android devices */
+  body {
+    font-size: 0.5rem; /* Decrease font size */
+  }
+}
+/* Apply box-sizing to all elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  margin: 0.5rem; /* Adjust as needed */
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Navigation styles */
+nav {
+  border: 2px solid #59d5e0;
+  border-radius: 2rem;
+  max-width: 25%; /* Adjust width as needed */
+  margin: 0 auto; /* Center the navigation */
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+/* Header styles */
+h2 {
+  position: sticky;
+  padding: 1rem;
+  background-color: #faa300;
+  border-radius: 2rem 2rem 0 0;
+}
+
+/* List styles */
+ul {
+  list-style-type: none;
+}
+
+/* List item styles */
+li {
+  border-top: 1px solid #59d5e0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Anchor tag styles */
+li a {
+  display: block;
+  text-decoration: none; /* Remove default underline */
+}
+
+/* Anchor tag hover and focus styles */
+li a:hover,
+li a:focus {
+  background-color: #f4538a;
+  cursor: pointer;
+  transition: all 1000ms;
+}
+
+/* Last child styles */
+li:last-child a {
+  border-radius: 0 0 2rem 2rem;
+}
+
+/* Emoji styles */
+li a::after {
+  content: attr(data-emoji);
+  position: relative;
+
+  transition: all 400ms;
+  top: 0;
+  left: -20px;
+}
+
+li a::before {
+  content: attr(data-hover-emoji);
+  position: relative;
+
+  transition: all 400ms;
+  top: 50px;
+  left: 24px;
+}
+
+li a:hover::after,
+li a:focus::after {
+  top: -70px;
+  left: -30px;
+  /*font-size: 3rem; /*Change emoji content on hover/focus */
+}
+
+li a:hover::before,
+li a:focus::before {
+  top: 0px;
+  font-size: 3rem; /*Change emoji content on hover/focus */
+}
+
+
+
 @media (max-width: 768px) {
   /* Adjust styles for smaller screens */
   body {
