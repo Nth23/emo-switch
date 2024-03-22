@@ -141,6 +141,6 @@ li a:focus::before {
   li a:focus::before {
     top: 0px; /* Adjust position for smaller screens */
     font-size: 2rem; /* Adjust font size for smaller screens */
-    left: 18px;
+/*     left: 18px; */
   }
 }
